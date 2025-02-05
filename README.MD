@@ -1,4 +1,3 @@
-# Readme made from Chat so dont quote me
 
 ## Strategic Overview
 
