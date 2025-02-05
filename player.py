@@ -1,5 +1,5 @@
 '''
-FINAL BOT
+Derived from MIT'S: FINAL BOT
 
 '''
 from skeleton.actions import FoldAction, CallAction, CheckAction, RaiseAction, BidAction
@@ -44,6 +44,7 @@ class Player(Bot):
         self.total_rounds = 0
         self.already_won = False
         self.nit = 0
+        #Playing like a nit works so :V
         self.opp_aggressive = False
 
         self.switched_to_100 = False
@@ -114,6 +115,7 @@ class Player(Bot):
         self.less_nit_call_losses = 0
 
         self.unnit_not_working = False
+        # And if it doesn't work, just stop using it
 
         # Initialize opponent modeling dictionary
         self.opp_model = {}
@@ -121,6 +123,15 @@ class Player(Bot):
     def update_opponent_model(self):
         '''
         Update opponent modeling statistics based on observed patterns.
+        
+        This is the main opponent model part
+        
+        3 parameters just based on the opponent is playing so we can adjust our strat
+        
+        Agg rate is just how many bets opp have done over rounds
+        
+        Similar with potbet and bluff rate. Just helps us quantify these metrics abit more. 
+        
         '''
         rounds = self.total_rounds if self.total_rounds > 0 else 1
         agg_rate = self.num_opp_bets / rounds
@@ -648,6 +659,13 @@ class Player(Bot):
 
     def hand_strength(self, round_state, street, active):
         '''
+        Additional use of eval7 library here. 
+        https://pypi.org/project/eval7/#description
+        
+        Equity calculation functions using monte carlo simulation
+        
+        #Maybe try to use py_hand_vs_range_exact to see if the results becomes more consistent
+        
         Calculate hand strength using eval7's optimized Monte Carlo equity function if available;
         otherwise, fallback to the manual simulation.
         '''
