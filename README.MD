@@ -1,4 +1,4 @@
-#Readme made from Chat so dont quote me
+# Readme made from Chat so dont quote me
 
 ## Strategic Overview
 
