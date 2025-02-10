@@ -1,6 +1,5 @@
 '''
-Derived from MIT'S: FINAL BOT
-
+David Goggins fr
 '''
 from skeleton.actions import FoldAction, CallAction, CheckAction, RaiseAction, BidAction
 from skeleton.states import GameState, TerminalState, RoundState
@@ -12,7 +11,7 @@ import eval7, pprint
 
 class Player(Bot):
     '''
-    A pokerbot.
+    A pokerbot. Pulled some code from an mit pokerbot 24 bot.
     '''
 
     def __init__(self):
