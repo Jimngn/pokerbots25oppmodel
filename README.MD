@@ -206,7 +206,11 @@ To run Goggins, follow these steps:
     ```
     pip install eval7
     ```
-2.  **Run the Bot:**
+2.  **MIT Engine:**
     ```
-    python skeleton/runner.py -b Goggins.py
+    Use MIT's engine https://github.com/mitpokerbots/engine-2025
+    ```
+3.  **Run the Bot:**
+    ```
+    python skeleton/runner.py -b player.py
     ```
