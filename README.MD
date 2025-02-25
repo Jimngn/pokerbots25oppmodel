@@ -1,7 +1,5 @@
 # Goggins - Poker Bot Strategy and Implementation
 
-This document provides a detailed overview of the strategy and implementation of Goggins, a poker bot designed to compete in heads-up, no-limit Texas Hold'em with auction elements.
-
 ## 1. Introduction
 
 Goggins is designed to be a competitive poker bot that leverages preflop hand rankings, opponent modeling, auction bidding strategies, and postflop hand strength evaluation. The core principles guiding the bot's strategy are:
