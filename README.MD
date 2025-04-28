@@ -1,5 +1,7 @@
 # Goggins - Poker Bot Strategy and Implementation
 
+Yes the readme is made by chat obviously 
+
 ## 1. Introduction
 
 Goggins is designed to be a competitive poker bot that leverages preflop hand rankings, opponent modeling, auction bidding strategies, and postflop hand strength evaluation. The core principles guiding the bot's strategy are:
